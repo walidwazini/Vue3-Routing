@@ -3,10 +3,10 @@
     <nav>
       <ul>
         <li>
-          <button @click="setActivePage('teams-list')">Teams</button>
+          <router-link to="/teams">Teams</router-link>
         </li>
         <li>
-          <button @click="setActivePage('users-list')">Users</button>
+          <router-link to="/users">Users</router-link>
         </li>
       </ul>
     </nav>
@@ -14,14 +14,7 @@
 </template>
 
 <script>
-export default {
-  emits: ['set-page'],
-  methods: {
-    setActivePage(page) {
-      this.$emit('set-page', page);
-    },
-  },
-};
+export default {};
 </script>
 
 <style scoped>
@@ -49,8 +42,9 @@ li {
   margin: 0 2rem;
 }
 
-button {
-  font: inherit;
+a {
+  /* font: inherit; */
+  text-decoration: none;
   background: transparent;
   border: 1px solid transparent;
   cursor: pointer;
@@ -59,10 +53,11 @@ button {
   display: inline-block;
 }
 
-button:hover,
-button:active {
-  color: #f1a80a;
-  border-color: #f1a80a;
+a:hover,
+a:active,
+a.active {
+  color: #85ffff;
+  border-color: #85ffff;
   background-color: #1a037e;
 }
 </style>
