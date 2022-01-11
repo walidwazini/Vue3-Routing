@@ -53,5 +53,6 @@ html {
 
 body {
   margin: 0;
+  background-color: #193d52;
 }
 </style>

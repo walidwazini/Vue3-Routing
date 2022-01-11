@@ -27,6 +27,7 @@ li {
   margin: 1rem 0;
   border: 1px solid #ccc;
   padding: 1rem;
+  background-color: white;
 }
 
 h3 {
