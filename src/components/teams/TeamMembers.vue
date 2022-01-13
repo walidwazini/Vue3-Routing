@@ -9,9 +9,9 @@
         :role="member.role"
       ></user-item>
     </ul>
-    <router-link to="/teams/t1">Go to Team 1</router-link> | 
-    <router-link to="/teams/t2">Go to Team 2</router-link>
-
+    <router-link to="/teams/t1">Go to Team 1</router-link> |
+    <router-link to="/teams/t2">Go to Team 2</router-link> |
+    <router-link to="/teams/t3">Go to Team 3</router-link> |
   </section>
 </template>
 
