@@ -49,6 +49,7 @@ export default {
   created() {
     // All will be call when component is created but before it shows ion the screeen
     this.loadTeamMembers(this.teamId);
+    console.log(this.$route.query)
   },
   watch: {
     teamId(newId) {
